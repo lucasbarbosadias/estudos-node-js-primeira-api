@@ -1,6 +1,6 @@
 #Anotações importantes, definições de API, REST e RESTFUL
 
-##API
+## API
 
 Cliente (Client)
 Garçon (anotar pedidos, levar pedidos para a cozinha) (API)
@@ -13,7 +13,7 @@ Acrônimo de Application Programming Interface (Interface de Programação de Ap
 -Intermediador para troca de informações.
 
 
-##REST
+## REST
 
 um acrônimo para REpresentational State Transfer (Transferência de Estado Representativo).
 
@@ -25,7 +25,7 @@ O REST delimita algumas obrigações nessas transferências de dados.
 
 Resources seria então: Uma entidade ou um objeto.
 
-###6 NECESSIDADES (constraints) para ser RESTful
+### 6 NECESSIDADES (constraints) para ser RESTful
 
 Uniform Interface: Manter uma uniformidade, uma constância, um padrão na construção da interface. Nossa API precisa ser coerente para quem vai consumi-lá. Precisa fazer sentido para o cliente e não ser confusa. Logo, coisas como: o uso correto dos verbos HTTP; endpoints coerentes (todos os endpoints no plural, por exemplo); usar somente uma linguagem de comunicação (json) e não várias ao mesmo tempo; sempre enviar respostas aos clientes; são exemplos de aplicação de uma interface uniforme.
 
@@ -40,12 +40,12 @@ Layered System: O cliente acessa a um endpoint, sem precisar saber da complexida
 Code on demand (optional): Dá a possibilidade da nossa aplicação pegar códigos, como o javascript, por exemplo, e executar no cliente.
 
 
-##RESTFUL
+## RESTFUL
 
 RESTful, é a aplicação dos padrões REST.
 
 
-##BOAS PRÁTICAS
+## BOAS PRÁTICAS
 
 -Utilizar verbos HTTP para requisições.
 -Utilizar plural ou singular na criação dos endpoints? _NÃO IMPORTA!_ use um padrão!!
@@ -64,27 +64,27 @@ RESTful, é a aplicação dos padrões REST.
         app.get("/clients")
 
 
-###VERBOS HTTP
+### VERBOS HTTP
 
-GET: Receber dados de um Resource.
-POST: Enviar dados ou informações para serem processados por um Resource.
-PUT: Atualizar dados de um Resource.
-DELETE: Deletar um Resource.
+GET: Receber dados de um Resource.  
+POST: Enviar dados ou informações para serem processados por um Resource.  
+PUT: Atualizar dados de um Resource.  
+DELETE: Deletar um Resource.  
 
-Por exemplo a url/uri: http://localhost:3000/clients
+Por exemplo a url/uri: http://localhost:3000/clients  
 
-clients seria meu Resource.
+clients seria meu Resource.  
 
 
-###STATUS DAS RESPOSTAS
+### STATUS DAS RESPOSTAS
 
-1xx: Informação
-2xx: Sucesso
-    200: OK
-    201: CREATED
-    204: Não tem conteúdo PUT POST DELETE
-3xx: Redirection
-4xx: Client Error
-    400: Bad Request
-    404: Not Found!
-5xx: Server Error 500: Internal Server Error
+1xx: Informação  
+2xx: Sucesso  
+    200: OK  
+    201: CREATED  
+    204: Não tem conteúdo PUT POST DELETE  
+3xx: Redirection  
+4xx: Client Error  
+    400: Bad Request  
+    404: Not Found!  
+5xx: Server Error 500: Internal Server Error  
